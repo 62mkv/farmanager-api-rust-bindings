@@ -8,7 +8,7 @@ edition = "2018"
 # IntelliJ Rust have problems with parsing cfg_if macro, which is present after the libc version 0.2.33.
 # https://github.com/rust-lang/libc/blob/cd3b87dc7ee79d33e6bad054ef1d4d54b00bcea1/src/lib.rs#L104
 # So, for development purpoces, exact version is temporary specified.
-libc = "=0.2.33"
+libc = "^0.2.66"
 winapi = { version = "0.3", features = ["winuser", "minwinbase", "wincon", "winerror", "combaseapi", "handleapi"] }
 bitflags = "1.0"
 widestring = "0.2.*"
